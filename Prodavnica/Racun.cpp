@@ -5,7 +5,8 @@ void Racun::dodajStavku(Stavka stavka) {
 	bool postoji = false;
 	for (int i = 0; i < this->brStavki; i++)	{
 		if (this->getRacun()[i].isEqual(stavka)) {
-			this->getRacun()[i].setKolicina(this->getRacun()[i].getKolicina() + stavka.getKolicina());
+			this->getRacun()[i].setKolicina(
+				this->getRacun()[i].getKolicina() + stavka.getKolicina());
 			postoji = true;
 		}
 	}

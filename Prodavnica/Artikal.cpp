@@ -2,7 +2,8 @@
 #include <iostream>
 #include <iomanip>
 
-Artikal::Artikal(int sifra, string naziv, double cena, TipArtikla tip) {
+Artikal::Artikal(int sifra, string naziv, 
+	double cena, TipArtikla tip) {
 	this->sifra = sifra;
 	this->naziv = naziv;
 	this->cena = cena;
@@ -34,7 +35,9 @@ void Artikal::setTip(TipArtikla tip) {
 	this->tip = tip;
 }
 void Artikal::ispisi() {
-	cout << setw(5) << this->getSifra() << setw(10) << this->naziv << setw(8) << setprecision(3) << this->getCena() << setw(7) << this->getTip ()<< endl;
+	cout << setw(5) << this->getSifra() << setw(10) 
+		<< this->naziv << setw(8) << setprecision(3) 
+		<< this->getCena() << setw(7) << this->getTip ()<< endl;
 }
 bool Artikal::isEqual(int sifra) {
 	if (sifra == this->getSifra()) {
@@ -48,7 +51,9 @@ bool Artikal::isEqual(int sifra) {
 string Artikal::toString() {
 	char nizChar[31];
 	int n;
-	n = sprintf_s(nizChar, "%2d. %-15s%11.2f", this->getSifra(), this->getNaziv().c_str(), this->getCena());
+	n = sprintf_s(nizChar, "%2d. %-15s%11.2f", this->getSifra(),
+		this->getNaziv().c_str(), this->getCena());
 	string s = nizChar;
 	return s;
 }
+

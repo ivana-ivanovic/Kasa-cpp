@@ -27,8 +27,5 @@ class Artikal
 		TipArtikla getTip();
 		bool isEqual(int sifra);
 		string toString();
-
-
-
 };
 

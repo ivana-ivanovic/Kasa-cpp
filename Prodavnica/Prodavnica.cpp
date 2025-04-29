@@ -160,26 +160,6 @@ int main()
     k->dodajArtikal(a6);
 
     Stavka s1 = Stavka(a1, 5.0);
-
-    cout << "Ispis stavka.toString metode:" << endl;
-    
-    cout << s1.toString() << endl;
-
-/*
-    Stavka s1 = Stavka(a1, 5.0);
-    Stavka s2 = Stavka(a2, 10.0);
-    Stavka s3 = Stavka(a3, 7.0);
-    Stavka s4 = Stavka(a4, 20.0);
-    Stavka s5 = Stavka(a5, 5.5);
-
-    r.dodajStavku(s1);
-    r.dodajStavku(s2);
-    r.dodajStavku(s3);
-    r.dodajStavku(s4);
-    r.dodajStavku(s5);
-
-    r.ispisi();
-    */
     
     while (true) {
         cout << "******************************" << endl;
@@ -219,8 +199,6 @@ int main()
             return 0;
         }
     }
-
-    
 }
 
 

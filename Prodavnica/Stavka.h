@@ -8,7 +8,6 @@ private:
 
 public:
 	Stavka() {};
-	//Stavka(int sifra, string naziv, double cena, TipArtikla tip, float kolicna);
 	Stavka(Artikal artikal, double kolicna);
 
 	double getKolicina();
